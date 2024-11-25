@@ -1,6 +1,6 @@
 import React from "react";
-import Testimonials from "../Testimonials";
-import Footer from "../Footer";
+import Testimonials from "../components/Testimonials";
+import Footer from "../components/Footer";
 
 const Contact = () => {
   return (
