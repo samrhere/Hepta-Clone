@@ -5,24 +5,22 @@ import Footer from "../components/Footer";
 const Contact = () => {
   return (
     <div className="w-full">
-      {/* Hero Section */}
       <div
-        className="relative bg-cover bg-center h-[70vh]"
+        className="relative bg-cover bg-center h-[70vh] sm:h-[60vh] lg:h-[70vh]"
         style={{
           backgroundImage: "url('https://preview.colorlib.com/theme/hepta/images/slider-3.jpg.webp')",
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div className="flex flex-col items-center justify-center h-full text-white text-center">
-          <h1 className="text-5xl font-bold">Contact Us</h1>
-          <p className="mt-4 text-lg">We’re here to help. Get in touch with us today!</p>
+        <div className="absolute inset-0 bg-black bg-opacity-10"></div>
+        <div className="flex flex-col items-center justify-center h-full  text-center px-4 sm:px-8">
+          <h1 className="text-4xl text-white sm:text-5xl font-bold">Contact</h1>
+          <p className="mt-4 text-white text-lg sm:text-xl">We’re here to help. Get in touch with us today!</p>
         </div>
       </div>
 
-      {/* Contact Section */}
-      <div className="py-16 px-6 max-w-7xl mx-auto">
+      <div className="py-16 px-6 sm:px-12 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Contact Form on the Left */}
+         
           <div>
             <h2 className="text-4xl font-bold mb-8">Send Us a Message</h2>
             <form className="space-y-6">
@@ -68,7 +66,6 @@ const Contact = () => {
             </form>
           </div>
 
-          {/* Contact Details on the Right */}
           <div>
             <h2 className="text-4xl font-bold mb-8">Get in Touch</h2>
             <p className="text-gray-600 mb-6">
@@ -107,10 +104,7 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Testimonials */}
       <Testimonials />
-
-      {/* Footer */}
       <Footer />
     </div>
   );

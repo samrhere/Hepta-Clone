@@ -40,18 +40,24 @@ const TourManagement = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: true, 
+    arrows: true,
   };
 
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6 text-gray-800">
+      <div className="container mx-auto px-4 text-center">
+     
+        <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">
           International Tour Management
         </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+        <p className="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto mb-12">
+          Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia, there live the blind texts. Separated they
+          live in Bookmarksgrove right at the coast of the Semantics, a large
+          language ocean.
         </p>
+
+     
         <div className="max-w-4xl mx-auto">
           <Slider {...settings}>
             {tourImages.map((image) => (
@@ -59,7 +65,7 @@ const TourManagement = () => {
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-96 object-cover rounded-lg shadow-lg"
+                  className="w-full h-60 sm:h-72 md:h-96 object-cover rounded-lg shadow-lg"
                 />
               </div>
             ))}

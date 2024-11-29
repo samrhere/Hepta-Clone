@@ -35,23 +35,22 @@ const TopDestination = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4 text-center">
-        {/* Section Title */}
-        <h1 className="text-5xl font-bold text-gray-800 mb-6">
+      
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">
           Top Destination
         </h1>
-        <p className="text-gray-600 text-lg mb-12">
+        <p className="text-gray-600 text-base sm:text-lg mb-12">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolor,
           iusto doloremque quo odio repudiandae sunt eveniet? Enim facilis
           laborum voluptate id porro, culpa maiores quis, blanditiis laboriosam
           alias. Sed.
         </p>
 
-        {/* Destination Cards */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {destinations.map((destination) => (
             <div
               key={destination.id}
-              className="bg-white shadow-sm overflow-hidden "
+              className="bg-white shadow-sm  overflow-hidden hover:shadow-lg transition-shadow duration-300"
             >
               <img
                 src={destination.image}
@@ -63,14 +62,14 @@ const TopDestination = () => {
                   {destination.title}
                 </h3>
                 <div className="flex items-center justify-center mb-2">
-                  {/* Star Ratings */}
+              
                   {Array.from({ length: 5 }, (_, i) => (
                     <span
                       key={i}
-                      className={`text-teal-500 ${
+                      className={`${
                         i < Math.round(destination.rating)
-                          ? "fas fa-star"
-                          : "far fa-star"
+                          ? "text-teal-500 fas fa-star"
+                          : "text-gray-300 far fa-star"
                       }`}
                     />
                   ))}

@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 const About = () => {
   return (
     <div className="w-full">
-      {/* Hero Section */}
+    
       <div className="relative h-[70vh] bg-cover bg-center" style={{ backgroundImage: "url('https://preview.colorlib.com/theme/hepta/images/slider-2.jpg')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">

@@ -1,8 +1,8 @@
 import React from "react";
 import Footer from "../components/Footer";
 
-const Blog = () => {
-  const blogPosts = [
+const News = () => {
+  const NewsPosts = [
     {
       id: 1,
       image: "https://preview.colorlib.com/theme/hepta/images/img_1.jpg",
@@ -35,8 +35,7 @@ const Blog = () => {
 
   return (
     <div className="w-full">
-      {/* Hero Section */}
-      <div className="relative bg-cover bg-center h-[70vh]" style={{ backgroundImage: "url('https://preview.colorlib.com/theme/hepta/images/hero_3.jpg')" }}>
+      <div className="relative bg-cover bg-center h-[70vh] bg-no-repeat" style={{ backgroundImage: "url('https://preview.colorlib.com/theme/hepta/images/hero_3.jpg')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="flex flex-col items-center justify-center h-full text-white text-center">
           <h1 className="text-5xl font-bold">Our Blog</h1>
@@ -44,11 +43,10 @@ const Blog = () => {
         </div>
       </div>
 
-      {/* Blog Content Section */}
       <div className="py-16 px-6 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogPosts.map((post) => (
-            <div key={post.id} className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition">
+          {NewsPosts.map((post) => (
+            <div key={post.id} className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105">
               <img src={post.image} alt={post.title} className="w-full h-56 object-cover" />
               <div className="p-6">
                 <p className="text-sm text-gray-500">{post.date}</p>
@@ -64,4 +62,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default News;

@@ -4,9 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-950 text-gray-400 py-12">
       <div className="container mx-auto px-4">
-        {/* Footer Sections */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {/* Quick Link Section */}
           <div>
             <h3 className="text-white text-lg font-bold mb-10 mt-10">Quick Link</h3>
             <ul className="space-y-2">
@@ -18,7 +16,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Support Section */}
           <div>
             <h3 className="text-white text-lg font-bold mb-10">Support</h3>
             <ul className="space-y-2">
@@ -30,7 +27,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info Section */}
           <div>
             <h3 className="text-white text-lg font-bold mb-10">Contact Info</h3>
             <ul className="space-y-2">
@@ -50,7 +46,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Subscribe Section */}
           <div>
             <h3 className="text-white text-lg font-bold mb-4">Subscribe</h3>
             <p className="mb-4">Sign up for our newsletter</p>
@@ -67,13 +62,12 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Footer Bottom Section */}
         <div className="mt-8 border-t border-gray-700 pt-4 text-center">
           <p className="text-gray-500">
             Copyright © 2024 All rights reserved | This template is made with{" "}
             <span className="text-gray-500">❤</span> by Colorlib
           </p>
-          {/* Social Icons */}
+      
           <div className="flex justify-center space-x-4 mt-4">
             <a href="#" className="text-gray-500 hover:text-white">
               <i className="fab fa-facebook-f"></i>

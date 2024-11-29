@@ -7,10 +7,8 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-transparent">
       <div className="container mx-auto flex justify-between items-center px-6 py-4">
-        {/* Logo */}
         <h1 className="text-white text-2xl font-bold">Hepta</h1>
 
-        {/* Hamburger Menu */}
         <div
           className="text-white text-3xl cursor-pointer"
           onClick={() => setMenuOpen(true)}
@@ -19,7 +17,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Fullscreen Menu */}
       {menuOpen && (
         <div className="fixed inset-0 bg-white flex flex-col items-center justify-center z-40">
           <div
