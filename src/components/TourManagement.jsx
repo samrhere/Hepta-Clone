@@ -44,9 +44,28 @@ const TourManagement = () => {
   };
 
   return (
-    <section className="py-16 bg-white">
+    <section className="relative py-16 overflow-hidden">
+      {/* Background with Slope */}
+      <div
+        className="absolute inset-0 -z-10"
+        style={{
+          background: "white",
+        }}
+      >
+        <div
+          style={{
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+            width: "100%",
+            height: "50%",
+            backgroundColor: "#14b8a6", // Teal background
+            clipPath: "polygon(0 20%, 100% 0, 100% 100%, 0 100%)", // 30-degree slope
+          }}
+        ></div>
+      </div>
+
       <div className="container mx-auto px-4 text-center">
-     
         <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">
           International Tour Management
         </h2>
@@ -57,7 +76,6 @@ const TourManagement = () => {
           language ocean.
         </p>
 
-     
         <div className="max-w-4xl mx-auto">
           <Slider {...settings}>
             {tourImages.map((image) => (
