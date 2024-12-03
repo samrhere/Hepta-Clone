@@ -58,11 +58,25 @@ const TourManagement = () => {
             bottom: 0,
             left: 0,
             width: "100%",
-            height: "50%",
-            backgroundColor: "#14b8a6", // Teal background
-            clipPath: "polygon(0 20%, 100% 0, 100% 100%, 0 100%)", // 30-degree slope
+            height: "40%",
+            backgroundColor: "#14b8a6", 
+            clipPath: "polygon(0 20%, 100% 0, 100% 100%, 0 100%)", 
           }}
         ></div>
+        <style>
+        {`
+          @media (max-width: 768px) {
+            div[style] {
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+          }
+          @media (max-width: 480px) {
+            div[style] {
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+          }
+        `}
+      </style>
       </div>
 
       <div className="container mx-auto px-4 text-center">
